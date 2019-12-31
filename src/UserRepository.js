@@ -1,4 +1,4 @@
-import sleepData from './data/sleep';
+// import sleepData from './data/sleep';
 
 class UserRepository {
   constructor() {
