@@ -69,28 +69,28 @@ function fetchUserData() {
   .then(response => response.json())
   .then(data => data.userData)
   .then(userInfo => userInfo.map(user => user = new User(user)))
-  .catch(error => console.log('fetch unsuccessful'))
+  .catch(error => console.log(error))
 }
 
 function fetchSleepData() {
   return fetch('https://fe-apps.herokuapp.com/api/v1/fitlit/1908/sleep/sleepData')
   .then(response => response.json())
   .then(data => data.sleepData)
-  .catch(error => console.log('fetch unsuccessful'))
+  .catch(error => console.log(error))
 }
 
 function fetchActivityData() {
   return fetch('https://fe-apps.herokuapp.com/api/v1/fitlit/1908/activity/activityData')
   .then(response => response.json())
   .then(data => data.activityData)
-  .catch(error => console.log('fetch unsuccessful'))
+  .catch(error => console.log(error))
 }
 
 function fetchHydrationData() {
   return fetch('https://fe-apps.herokuapp.com/api/v1/fitlit/1908/hydration/hydrationData')
   .then(response => response.json())
   .then(data => data.hydrationData)
-  .catch(error => console.log('fetch unsuccessful'))
+  .catch(error => console.log(error))
 }
 
 
